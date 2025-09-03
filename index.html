@@ -620,8 +620,20 @@
             }
 
             .gallery-slider {
-                height: 600px;
-            }
+    height: 400px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* taşan kısımları gizle */
+}
+
+.gallery-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* kırpma olmadan göster */
+    object-position: center; /* ortala */
+}
 
             .whatsapp-float {
                 width: 55px;
